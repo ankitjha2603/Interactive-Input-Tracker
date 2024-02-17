@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Interactive Input Tracker",
+  "version": "0.0.1",
+  "description": "Introducing 'Interactive Input Tracker,' a dynamic Chrome extension that transforms your browsing experience by providing real-time textual feedback for every action you take. From simple keystrokes like 'A' to more complex interactions such as 'Alt+f' or mouse clicks like RMB (Right Mouse Button) and LMB (Left Mouse Button), 'Interactive Input Tracker' elegantly displays your actions at the bottom left of the screen. Enhance your awareness of digital interactions and streamline your browsing with this intuitive and informative extension.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["assets/js/content.js"]
+    }
+  ],
+  "icons": {
+    "128": "assets/img/logo.png"
+  }
+}
